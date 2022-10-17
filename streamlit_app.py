@@ -27,8 +27,8 @@ period = n_years * 30
 exchange_id = 'binance'
 exchange_class = getattr(ccxt, exchange_id)
 exchange = exchange_class({
-    'apiKey': '7grlZjIVCy707yJMdgFJEQNZGS8EISxYx31Fr2FafInVIS1lMp059UkhUlFlpLAt',
-    'secret': 'vVaa3M5pefQD9x7XvbKggQJgRvueEazwBHexycdSumHaK6KRCJIWoOEfgnYhOfZ1',
+    'apiKey': st.secrets["k"],
+    'secret': st.secrets["s"],
     'timeout': 30000,
     'enableRateLimit': True,
 })
